@@ -149,17 +149,21 @@ table {
 .item1, .item2, .item3, .item4{
 	max-width: 300px;
 	width: 100%;
+	text-align: center;
 	}
 
 .item1 svg, .item2 svg, .item3 svg, .item4 svg{
 	font-size: 40px;
 	color: #555555;
 	position: relative;
-	text-align: center;
 }
 
-.item1 svg:hover, .item2 svg:hover, .item3 svg:hover, .item4 svg:hover{
-	color: #c7b299;
+.item1:hover svg, .item1:hover .tekst1, .item2:hover svg, .item2:hover .tekst1, .item3:hover svg, .item3:hover .tekst1, .item4:hover svg, .item4:hover .tekst1{
+color: #c7b299;
+}
+
+.item1:hover hr, .item2:hover hr, .item3:hover hr, .item4:hover hr{
+	background-color: #c7b299;
 }
 
 .item1 p, .item2 p, .item3 p, .item4 p{
@@ -169,6 +173,54 @@ table {
 	font-weight: 600;
 	color: #555555;
 	top: 35px;
+}
+
+.item1 .tekst, .item2 .tekst, .item3 .tekst, .item4 .tekst{
+	position: relative;                   
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #8c8c8c;
+	padding-top: 27px;          /*    Не  двигается     */
+}
+
+.item1 hr, .item2 hr, .item3 hr, .item4 hr{
+	position: relative;
+	top: 60px;
+	height: 3px;
+	width: 70px;
+	border: none;
+	background-color: #f1eee9;
+}
+
+.karusel h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 27.5vh;
+}
+
+.karusel h1{
+	margin-top: 23px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	color: #ffffff;
+	font-size: 52px;
+	text-align: center;	
+}
+
+.karusel p{
+	margin-top: 32px;
+	width: 45%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	margin-left: 27.5%;
+
 }
 
 /***************************/
